@@ -1,4 +1,8 @@
+# Given an integer array nums, return true if any value appears at least twice in the array,
+# and return false if every element is distinct.
+
 def contains_duplicate(nums):
+    """O(n * n) solution."""
     i = 0
     j = 1
 
@@ -15,6 +19,7 @@ def contains_duplicate(nums):
 
 
 def contains_duplicate(nums):
+    """O(1) solution."""
     nums_set = set(nums)
     if len(nums_set) != len(nums):
         return True
