@@ -1,8 +1,8 @@
-def is_anagram(string1, string2):
-    string1 = ''.join(sorted(string1))
-    string2 = ''.join(sorted(string2))
+def is_anagram(s, t):
+    string1 = ''.join(sorted(s))
+    string2 = ''.join(sorted(t))
 
-    if string1 == string2:
+    if s == t:
         return True
 
     return False
