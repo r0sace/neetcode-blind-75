@@ -3,14 +3,14 @@ def longest_consecutive(nums):
         return 0
 
     nums.sort()
-    temp = 1
+    nums = set(nums)
+    nums = list(nums)
+    temp = 0
     consec_count = 0
 
     for i in range(len(nums) - 1):
         if nums[i + 1] == nums[i] + 1:
             temp += 1
-        elif nums[i + 1] == nums[i]:
-            temp = temp
         else:
             if temp > consec_count:
                 consec_count = temp
